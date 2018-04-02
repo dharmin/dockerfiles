@@ -1,0 +1,1 @@
+## Openresty build with redis2 config for EasyEngine v4
