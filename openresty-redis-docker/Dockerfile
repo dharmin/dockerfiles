@@ -3,7 +3,7 @@
 
 FROM debian:stretch-slim
 
-LABEL maintainer="Evan Wies <evan@neomantra.net>"
+LABEL maintainer="Dharmin Shah <dharminshah175@gmail.com>"
 
 # RESTY_DEB_FLAVOR build argument is used to select other
 # OpenResty Debian package variants.
