@@ -67,8 +67,8 @@ RUN set -ex; \
 	\
 	apt-get purge -y --auto-remove $buildDeps
 
+RUN mkdir /data && touch /data/redis-server.log && chown redis:redis /data -R
 COPY redis.conf /data/redis.conf
-RUN touch /data/redis-server.log && chown redis:redis /data -R
 VOLUME /data
 WORKDIR /data
 
