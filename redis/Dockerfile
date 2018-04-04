@@ -74,6 +74,5 @@ WORKDIR /data
 
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
 EXPOSE 6379
-CMD ["redis-server"]
+CMD [ "redis-server", "/data/redis.conf" ]
